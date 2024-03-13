@@ -7,53 +7,51 @@ const AboutPage = () => {
       <div className="container my-3 py-3">
         <h1 className="text-center">About Us</h1>
         <hr />
-        <p className="lead text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          facere doloremque veritatis odit similique sequi. Odit amet fuga nam
-          quam quasi facilis sed doloremque saepe sint perspiciatis explicabo
-          totam vero quas provident ipsam, veritatis nostrum velit quos
-          recusandae est mollitia esse fugit dolore laudantium. Ex vel explicabo
-          earum unde eligendi autem praesentium, doloremque distinctio nesciunt
-          porro tempore quis eaque labore voluptatibus ea necessitatibus
-          exercitationem tempora molestias. Ad consequuntur veniam sequi ullam
-          tempore vel tenetur soluta dolore sunt maxime aliquam corporis est,
-          quo saepe dolorem optio minus sint nemo totam dolorum! Reprehenderit
-          delectus expedita a alias nam recusandae illo debitis repellat libero,
-          quasi explicabo molestiae saepe, dolorem tempore itaque eveniet quam
-          dignissimos blanditiis excepturi harum numquam vel nihil? Ipsum
+        <p className="lead text-center">Welcome to Electronics by SK, your premier destination for electronic components and accessories.
+
+At Electronics by SK, we specialize in providing a vast selection of top-quality electronic components to DIY enthusiasts, hobbyists, engineers, and professionals alike.
+
+Our mission is simple i.e, to offer a seamless shopping experience, exceptional customer service, and unparalleled expertise in electronic components.
+
+With a commitment to quality and reliability, we source our products from trusted manufacturers to ensure that you receive only the best components for your projects.
+
+Whether you're working on a small DIY project or a large-scale electronic endeavor, our dedicated team is here to help you find the perfect components to bring your ideas to life.
+
+Thank you for choosing Electronics by SK as our trusted partner in electronics. We look forward to serving you and being a part of your electronic journey.
+
         </p>
 
         <h2 className="text-center py-4">Our Products</h2>
         <div className="row">
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
+              <img className="card-img-top img-fluid" src="https://2.bp.blogspot.com/-R35EaUxbjW0/V-Kb91s_IeI/AAAAAAAAA74/ZtL3QOGK1n43XU1FlwFEOGN3t-38M9_TwCLcB/s1600/ELECTRIC1.jpg" alt="" height={160} />
               <div className="card-body">
-                <h5 className="card-title text-center">Mens's Clothing</h5>
+                <h5 className="card-title text-center">Passive components</h5>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
+              <img className="card-img-top img-fluid" src="https://www.hackatronic.com/wp-content/uploads/2019/12/active-electronic-components.jpg" alt="" height={160} />
               <div className="card-body">
-                <h5 className="card-title text-center">Women's Clothing</h5>
+                <h5 className="card-title text-center">Active components</h5>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
+              <img className="card-img-top img-fluid" src="https://5.imimg.com/data5/SELLER/Default/2020/12/OZ/EP/GL/7590293/lpt-18054-luminous-battery.jpg" alt="" height={160} />
               <div className="card-body">
-                <h5 className="card-title text-center">Jewelery</h5>
+                <h5 className="card-title text-center">Batteries</h5>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
+              <img className="card-img-top img-fluid" src="https://bulkdevices.co.uk/pub/media/mageplaza/blog/post/c/o/computer_storage.jpg" alt="" height={160} />
               <div className="card-body">
-                <h5 className="card-title text-center">Electronics</h5>
+                <h5 className="card-title text-center">Storage devices</h5>
               </div>
             </div>
           </div>

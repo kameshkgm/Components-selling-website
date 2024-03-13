@@ -43,18 +43,18 @@ const Checkout = () => {
                 <div className="card-body">
                   <ul className="list-group list-group-flush">
                     <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                      Products ({totalItems})<span>${Math.round(subtotal)}</span>
+                      Products ({totalItems})<span>₹{Math.round(subtotal)}</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center px-0">
                       Shipping
-                      <span>${shipping}</span>
+                      <span>₹{shipping}</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                       <div>
                         <strong>Total amount</strong>
                       </div>
                       <span>
-                        <strong>${Math.round(subtotal + shipping)}</strong>
+                        <strong>₹{Math.round(subtotal + shipping)}</strong>
                       </span>
                     </li>
                   </ul>
@@ -155,6 +155,7 @@ const Checkout = () => {
                         <select className="form-select" id="country" required>
                           <option value="">Choose...</option>
                           <option>India</option>
+                          <option>USA</option>
                         </select>
                         <div className="invalid-feedback">
                           Please select a valid country.
@@ -168,7 +169,9 @@ const Checkout = () => {
                         <br />
                         <select className="form-select" id="state" required>
                           <option value="">Choose...</option>
-                          <option>Punjab</option>
+                          <option>Tamil Nadu</option>
+                          <options>Karnataka</options>
+                          <options>Kerala</options>
                         </select>
                         <div className="invalid-feedback">
                           Please provide a valid state.
@@ -269,7 +272,7 @@ const Checkout = () => {
 
                     <button
                       className="w-100 btn btn-primary "
-                      type="submit" disabled
+                      type="submit"
                     >
                       Continue to checkout
                     </button>

@@ -12,7 +12,7 @@ const Cart = () => {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-md-12 py-5 bg-light text-center">
+          <div className="col-md-12 py-12 bg-light text-center">
             <h4 className="p-3 display-5">Your Cart is Empty</h4>
             <Link to="/" className="btn  btn-outline-dark mx-4">
               <i className="fa fa-arrow-left"></i> Continue Shopping
@@ -32,7 +32,7 @@ const Cart = () => {
 
   const ShowCart = () => {
     let subtotal = 0;
-    let shipping = 30.0;
+    let shipping = 50.0;
     let totalItems = 0;
     state.map((item) => {
       return (subtotal += item.price * item.qty);
@@ -63,7 +63,7 @@ const Cart = () => {
                               >
                                 <img
                                   src={item.image}
-                                  // className="w-100"
+                              // className="w-100"
                                   alt={item.title}
                                   width={100}
                                   height={75}
@@ -108,7 +108,7 @@ const Cart = () => {
                               <p className="text-start text-md-center">
                                 <strong>
                                   <span className="text-muted">{item.qty}</span>{" "}
-                                  x ${item.price}
+                                  x ₹{item.price}
                                 </strong>
                               </p>
                             </div>
@@ -129,18 +129,18 @@ const Cart = () => {
                   <div className="card-body">
                     <ul className="list-group list-group-flush">
                       <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                        Products ({totalItems})<span>${Math.round(subtotal)}</span>
+                        Products ({totalItems})<span>₹{Math.round(subtotal)}</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center px-0">
                         Shipping
-                        <span>${shipping}</span>
+                        <span>₹{shipping}</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                         <div>
                           <strong>Total amount</strong>
                         </div>
                         <span>
-                          <strong>${Math.round(subtotal + shipping)}</strong>
+                          <strong>₹{Math.round(subtotal + shipping)}</strong>
                         </span>
                       </li>
                     </ul>

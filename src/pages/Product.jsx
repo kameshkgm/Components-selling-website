@@ -5,6 +5,7 @@ import Marquee from "react-fast-marquee";
 import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
 
+
 import { Footer, Navbar } from "../components";
 
 const Product = () => {
@@ -24,12 +25,12 @@ const Product = () => {
     const getProduct = async () => {
       setLoading(true);
       setLoading2(true);
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+      const response = await fetch(`http://localhost:3500/products/${id}`);
       const data = await response.json();
       setProduct(data);
       setLoading(false);
       const response2 = await fetch(
-        `https://fakestoreapi.com/products/category/${data.category}`
+        `http://localhost:3500/products/category/${data.category}`
       );
       const data2 = await response2.json();
       setSimilarProducts(data2);
